@@ -23,7 +23,7 @@ export class HomePage {
     this.invalidCredentials = null;
 
       if ( this.localStorage.CheckUserCredentials(this.username, this.password)) {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/main']);
       } else {
         this.invalidCredentials = 'Invalid Login Credentials';
       }
